@@ -324,7 +324,8 @@ header {
 }
 
 /* Exchange Rate Calculator Button Style */
-.exchange-rate-calculator .btn {
+.exchange-rate-calculator .btn,
+.mission-text .btn {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -535,6 +536,56 @@ hr {
     cursor: pointer;
 }
 
-.explore-business .btn .wise-business:hover {
+.explore-business .btn .wise-business:hover,
+.mission-text .btn .wise-mission:hover {
     background-color: #c3f7aa;
+}
+
+/* Mission Section Style */
+.our-mission {
+    width: 85%;
+    height: 95vh;
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+    border-radius: 30px;
+    background-color: #163300;
+}
+
+.globe-image img {
+    position: relative;
+    top: -230px;
+}
+
+.mission-text {
+    margin-top: -180px;
+}
+
+.mission-text h2 {
+    color: #9ff578;
+    font-size: 85px;
+    font-weight: 800;
+    line-height: 90%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mission-text p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 0.5%;
+    line-height: 150%;
+    color: #fff;
+}
+
+.mission-text .btn .wise-mission {
+    font-size: 15px;
+    font-weight: 600;
+    color: #163300;
+    background-color: #9ff578;
+    padding: 13px 23px;
+    border-radius: 30px;
+    cursor: pointer;
 }
