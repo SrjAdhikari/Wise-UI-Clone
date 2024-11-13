@@ -589,3 +589,119 @@ hr {
     border-radius: 30px;
     cursor: pointer;
 }
+/* Main Section Style End Here */
+
+
+/* Footer Style Start Here */
+footer {
+    background-color: #16330014;
+    margin-top: 100px;
+    padding: 100px 80px;
+}
+
+/* Conditions Style */
+.conditions {
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.conditions ol {
+    padding: 30px 50px;
+}
+
+.conditions ol li {
+    color: #0f0f0f;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    margin: 10px 0;
+}
+
+.conditions ol li span {
+    color: #163300;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* Links Style */
+footer .links {
+    display: flex;
+    justify-content: space-evenly;
+
+    font-size: 14px;
+    margin-top: 130px;
+    padding-bottom: 15px;
+}
+
+.links p {
+    color: #163300;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.links a {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.links a:hover {
+    color: #21231D;
+    text-decoration: underline;
+}
+
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    list-style: none;
+    cursor: pointer;
+}
+
+.social-media ul li {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    background-color: #16330014;
+    border-radius: 50%;
+}
+
+.social-media ul li i {
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+
+.social-media ul li:hover {
+    color: #fff;
+    background-color: #21231D;
+}
+
+/* Important Links Style */
+.imp-links {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.imp-links p,
+.copy-right-text  p span {
+    font-size: 14px;
+    color: #3b3b3b;
+    text-decoration: underline;
+}
+
+.copy-right {
+    margin: 40px 0 20px;
+}
+
+.copy-right p,
+.copy-right-text p {
+    color: #3b3b3b;
+    font-size: 14px;
+    text-align: center;
+}
+/* Footer Style End Here */
