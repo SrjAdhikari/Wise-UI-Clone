@@ -403,3 +403,88 @@ hr {
     width: 100%;
     border: 1px solid #e5e5e5;
 }
+
+/* Security Section Style */
+.bank-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.bank-info p {
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.jp-morgan-bank,
+.network,
+.license {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bank-info .fa-building-columns,
+.network .fa-circle-check,
+.license .fa-shield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    color: #89ec5a;
+    font-size: 30px;
+    margin-right: 20px;
+
+    border-radius: 50%;
+    background-color: #163300;
+}
+
+.lock-key {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 80%;
+    height: 550px;
+    margin: auto;
+    text-align: left;
+    border-radius: 50px;
+    background-color: #A0E1E1;
+}
+
+.lock-text h2 {
+    color: #21231D;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 30px;
+}
+
+.lock-text p {
+    color: #21231D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.5px;
+    line-height: 150%;
+}
+
+.lock-key .lock-image img {
+    height: 400px;
+}
+
+.lock-key .btn .learn-more {
+    color: #A0E1E1;
+    background-color: #21231D;
+    padding: 10px 50px;
+    border-radius: 30px;
+}
+
+.lock-key .btn .learn-more:hover {
+    background-color: #163300;
+}
