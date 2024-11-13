@@ -355,3 +355,51 @@ header {
 .exchange-rate-calculator .btn .send-money:hover {
     background-color: #89ec5a;
 }
+
+/* Features Section Style */
+.features {
+    padding: 50px 12%;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.text-col, .image-col {
+    flex-basis: 50%;
+}
+
+.image-col img {
+    display: block;
+    width: 450px;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 110%;
+    margin-bottom: 20px;
+}
+
+.features p {
+    color: #5a5959;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.5%;
+    line-height: 150%;
+}
+
+.features .btn .explore,
+.features .btn .explore-feature {
+    margin-right: 150px;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #e5e5e5;
+}
