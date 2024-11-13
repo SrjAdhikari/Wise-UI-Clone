@@ -10,14 +10,16 @@ body {
     width: 100%;
     height: 100vh;
     font-family: "Poppins", sans-serif;
+    padding-top: 85px;  /* Adjust based on header height to prevent content overlap */
 }
 
 /* Header Section Style Start Here */
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
-    /* width: 100%;
-    z-index: 1000; */
+    left: 0;
+    width: 100%;
+    z-index: 1000;  /* Keeps the header above other content */
     background-color: #fff;
 }
 
@@ -32,7 +34,6 @@ header {
     gap: 300px;
 
     padding: 15px;
-    /* border-bottom: 1px solid #e0e0e0; */
 }
 
 .left-side {
