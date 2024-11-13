@@ -185,3 +185,173 @@ header {
     height: 45px;
     margin: 0 15px;
 }
+
+/* Exchange Rate Style */
+.exchange-rate {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    margin-top: 35px;
+    background-color: #9FE870;
+}
+
+.exchange-rate .exchange-rate-text h2 {
+    color:#163300;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    padding: 15px 0;
+}
+
+.exchange-rate .exchange-rate-text > p {
+    color: #294422;
+    font-size: 17px;
+    text-align: left;
+    line-height: 150%;
+}
+
+.exchange-rate .exchange-rate-text .how-to-send-money {
+    width: 45%;
+    color: #b6faa5;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-top: 50px;
+    border-radius: 30px;
+    background-color: #163300;
+    cursor: pointer;
+}
+
+/* Exchange Rate Calculator Style */
+.exchange-rate .exchange-rate-calculator {
+    width: 30%;
+    margin: 80px 0;
+}
+.exchange-rate .exchange-rate-calculator {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 30px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.exchange-rate-calculator p {
+    font-size: 13px;
+    font-weight: 600;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.sender-money, 
+.receiver-money {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #163300;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 30px;
+    border-radius: 10px;
+    border: 1px solid #163300;
+    cursor: pointer;
+    border: 2px solid tomato;
+}
+
+.exchange-rate-calculator input {
+    width: 10vw;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+}
+
+.exchange-rate-calculator input::placeholder {
+    color: #000;
+}
+
+.sender-money .country,
+.receiver-money .country {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+.sender-money img,
+.receiver-money img {
+    height: 20px;
+}
+
+.sender-money .fa-angle-down,
+.receiver-money .fa-angle-down {
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.sender .fa-circle {
+    font-size: 8px;
+    color: rgb(228, 226, 226);
+}
+
+.sender .account-fee, 
+.sender .transfer-fee, 
+.sender .total-fee,
+.sender .convert-amount,
+.sender .guaranteed-rate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 35px;
+    cursor: pointer;
+}
+
+.sender .total-fee {
+    margin-bottom: 30px;
+}
+
+.receiver, .saving {
+    margin-top: 15px;
+}
+
+/* Exchange Rate Calculator Button Style */
+.exchange-rate-calculator .btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.exchange-rate-calculator button {
+    color: #163300;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 13px 45px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.exchange-rate-calculator .btn .compare {
+    color: #b6faa5;
+    background-color: #163300;
+}
+
+.exchange-rate-calculator .btn .send-money {
+    color: #000;
+    background-color: #9ff578;
+}
+
+.exchange-rate-calculator .btn .send-money:hover {
+    background-color: #89ec5a;
+}
