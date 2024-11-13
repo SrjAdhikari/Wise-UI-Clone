@@ -102,3 +102,86 @@ header {
     background-color: rgb(243, 243, 243);
 }
 /* Header Section Style End Here */
+
+
+/* Main Section Style Start Here */
+.main-container {
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading Section Style */
+.heading h1 {
+    font-size: 96px;
+    font-weight: 900;
+    margin-top: 80px;
+    line-height: 85%;
+    letter-spacing: 2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading > p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+    text-align: center;
+    letter-spacing: 0.5%;
+    line-height: 150%;
+    color: #5a5959;
+}
+
+.heading .btn,
+.features .btn,
+.lock-key .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color:#163300;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.heading .btn .send-money,
+.features .btn .open-account,
+.features .btn .explore-feature {
+    background-color: #9ff578;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.heading .btn .send-money:hover,
+.features .btn .open-account:hover,
+.features .btn .explore-feature:hover {
+    background-color: #89ec5a;
+}
+
+.heading .btn .transfer,
+.features .btn .explore {
+    position: relative; /* Position relative for line placement */
+    padding: 10px 15px;
+}
+
+.line {
+    width: 85%;
+    height: 1px;
+    background-color: #000; 
+    
+    position: absolute;
+    left: 15px;
+}
+
+/* Main Image Style */
+.main-container .main-image {
+    margin: 45px 0 30px 0;
+}
+
+/* App Store Logo Style */
+.main-container .app-store-logo img {
+    height: 45px;
+    margin: 0 15px;
+}
