@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Global Variables */
+:root {
+    --primary-color: #9FE870;
+    --secondary-color: #f7f5f4;
+    --hover-color: #89EC5A;
+    --font-size-small: 1.2rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,234 +18,180 @@ body {
     width: 100%;
     height: 100vh;
     font-family: "Poppins", sans-serif;
-    padding-top: 85px;  /* Adjust based on header height to prevent content overlap */
+    padding-top: 6rem;
 }
 
 /* Header Section Style Start Here */
 header {
     position: fixed;
     top: 0;
-    left: 0;
+    z-index: 1000;          /* Keeps the header above other content */
     width: 100%;
-    z-index: 1000;  /* Keeps the header above other content */
     background-color: #fff;
 }
 
-.header-container {
-    color:#163300;
-    font-size: 15px;
-    font-weight: 600;
-
+.header-container,
+.header-left {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 300px;
-
-    padding: 15px;
+    padding: 10px 0;
 }
 
-.left-side {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+.header-left .logo {
+    margin-right: 2.5rem;
+    padding-top: 5px;
 }
 
-.left-side .logo img {
-    padding-top: 10px;
-}
-
-.left-side .menu {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.right-side ul {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+.header-left ul li,
+.header-right ul li {
+    display: inline-block;
     list-style: none;
+    padding: 5px 1rem;
+    color: #163300;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.right-side ul li .fa-caret-down {
-    font-size: 10px;
-    margin-left: 3px;
+.header-right ul .lang {
+    display: inline-flex;
+    position: relative;
+    top: 3px;
+    gap: 0.3rem;
 }
 
-.right-side .language {
-    display: flex;
-    align-items: center;
-}
-
-.right-side .language img {
+.header-right ul img {
     height: 20px;
-    margin-right: 5px;
 }
 
-/* Active Button and Register Button Style */
-.left-side .menu .active, .right-side ul .register {
-    background-color: #9ff578;
-    padding: 5px 15px;
+.header-left ul li:hover,
+.header-right ul li:hover {
     border-radius: 20px;
-    cursor: pointer;
-}
-
-.left-side .menu .active:hover, 
-.right-side ul .register:hover {
-    background-color: #89ec5a;
-}
-
-/* Left-Side and Right-Side Button Style */
-.left-side .menu .business, 
-.platform, 
-.right-side ul li {
-    background-color: #fff;
-    padding: 5px 15px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.left-side .menu .business:hover, 
-.platform:hover,
-.right-side ul li:hover {
-    background-color: rgb(243, 243, 243);
+    background-color: var(--primary-color);
 }
 /* Header Section Style End Here */
 
 
 /* Main Section Style Start Here */
-.main-container {
+main {
     width: 100%;
     text-align: center;
 }
 
 /* Heading Section Style */
 .heading h1 {
-    font-size: 96px;
+    font-size: 5rem;
     font-weight: 900;
-    margin-top: 80px;
+    padding: 3rem 0;
     line-height: 85%;
     letter-spacing: 2%;
-    text-align: center;
     text-transform: uppercase;
 }
 
-.heading > p {
-    font-size: 20px;
-    font-weight: 400;
-    margin-top: 50px;
-    text-align: center;
-    letter-spacing: 0.5%;
-    line-height: 150%;
+.heading p {
     color: #5a5959;
+    font-size: var(--font-size-small);
+    font-weight: 400;
+    line-height: 150%;
 }
 
-.heading .btn,
-.features .btn,
-.lock-key .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-
+.main-container .btn button {
     color:#163300;
-    font-size: 16px;
+    margin-top: 2rem;
+    font-size: var(--font-size-small);
     font-weight: 500;
-    margin-top: 30px;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
     cursor: pointer;
 }
 
-.heading .btn .send-money,
-.features .btn .open-account,
-.features .btn .explore-feature {
-    background-color: #9ff578;
-    padding: 10px 30px;
-    border-radius: 30px;
+.main-container .btn .primary-btn {
+    margin-right: 1rem;
+    background-color: var(--primary-color);
 }
 
-.heading .btn .send-money:hover,
-.features .btn .open-account:hover,
-.features .btn .explore-feature:hover {
-    background-color: #89ec5a;
+.main-container .btn .secondary-btn {
+    background-color: var(--secondary-color);
 }
 
-.heading .btn .transfer,
-.features .btn .explore {
-    position: relative; /* Position relative for line placement */
-    padding: 10px 15px;
-}
-
-.line {
-    width: 85%;
-    height: 1px;
-    background-color: #000; 
-    
-    position: absolute;
-    left: 15px;
+.main-container .btn .primary-btn:hover,
+.main-container .btn .secondary-btn:hover {
+    transition: 0.2s;
+    background-color: var(--hover-color);
 }
 
 /* Main Image Style */
 .main-container .main-image {
-    margin: 45px 0 30px 0;
+    width: 85%;
+    margin: 3rem auto 2rem;
 }
 
-/* App Store Logo Style */
-.main-container .app-store-logo img {
-    height: 45px;
-    margin: 0 15px;
+.main-container .main-image img {
+    width: 100%;
 }
 
-/* Exchange Rate Style */
-.exchange-rate {
+.main-container .app-store img {
+    height: 3rem;
+    margin: 0 1rem;
+}
+
+/* Exchange Rate Section Style */
+.exchange-rate-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     width: 100%;
-    margin-top: 35px;
+    margin: 2rem;
+    padding: 1.5rem 0;
     background-color: #9FE870;
 }
 
-.exchange-rate .exchange-rate-text h2 {
-    color:#163300;
-    font-size: 30px;
-    font-weight: 600;
-    text-align: left;
-    padding: 15px 0;
+.rate-text {
+    width: 45%;
 }
 
-.exchange-rate .exchange-rate-text > p {
+.rate-text h2 {
+    color:#163300;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.rate-text p {
     color: #294422;
-    font-size: 17px;
+    font-size: 1rem;
     text-align: left;
     line-height: 150%;
 }
 
-.exchange-rate .exchange-rate-text .how-to-send-money {
-    width: 45%;
+.rate-text .btn {
+    text-align: left;
+}
+
+.rate-text .btn .send-money:hover {
     color: #b6faa5;
-    font-size: 15px;
-    font-weight: 500;
-    padding: 10px 20px;
-    margin-top: 50px;
-    border-radius: 30px;
     background-color: #163300;
-    cursor: pointer;
 }
 
 /* Exchange Rate Calculator Style */
-.exchange-rate .exchange-rate-calculator {
-    width: 30%;
-    margin: 80px 0;
+.exchange-rate-container .rate-calculator {
+    width: 40%;
+    margin: 5rem 0;
 }
-.exchange-rate .exchange-rate-calculator {
+
+.exchange-rate-container .rate-calculator {
     background-color: #fff;
     border-radius: 30px;
     padding: 30px 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.exchange-rate-calculator p {
+.rate-calculator p {
     font-size: 13px;
     font-weight: 600;
     padding-left: 30px;
@@ -260,8 +214,8 @@ header {
     border: 2px solid tomato;
 }
 
-.exchange-rate-calculator input {
-    width: 10vw;
+.rate-calculator input {
+    width: 20vw;
     color: #000;
     font-size: 20px;
     font-weight: 600;
@@ -270,7 +224,7 @@ header {
     outline: none;
 }
 
-.exchange-rate-calculator input::placeholder {
+.rate-calculator input::placeholder {
     color: #000;
 }
 
@@ -309,8 +263,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 15px;
-    font-weight: 500;
     margin-top: 10px;
     margin-right: 35px;
     cursor: pointer;
@@ -324,50 +276,21 @@ header {
     margin-top: 15px;
 }
 
-/* Exchange Rate Calculator Button Style */
-.exchange-rate-calculator .btn,
-.mission-text .btn {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.exchange-rate-calculator button {
-    color: #163300;
-    font-size: 15px;
+.rate-calculator .btn button {
+    font-size: 1rem;
     font-weight: 600;
-    border-radius: 20px;
-    padding: 13px 45px;
-    border: none;
-    outline: none;
-    cursor: pointer;
 }
 
-.exchange-rate-calculator .btn .compare {
-    color: #b6faa5;
-    background-color: #163300;
-}
-
-.exchange-rate-calculator .btn .send-money {
-    color: #000;
-    background-color: #9ff578;
-}
-
-.exchange-rate-calculator .btn .send-money:hover {
-    background-color: #89ec5a;
-}
-
-/* Features Section Style */
+/* Feature Section Style */
 .features {
-    padding: 50px 12%;
+    padding: 4rem 10% 2rem;
     text-align: left;
 }
 
 .row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 50px 0;
 }
 
 .text-col, .image-col {
@@ -381,51 +304,48 @@ header {
 }
 
 .features h2 {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 110%;
-    margin-bottom: 20px;
+    margin-bottom: 1.5rem;
 }
 
 .features p {
     color: #5a5959;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 130%;
     letter-spacing: 0.5%;
     line-height: 150%;
 }
 
-.features .btn .explore,
-.features .btn .explore-feature {
-    margin-right: 150px;
-}
-
 hr {
     width: 100%;
+    margin-top: 2rem;
     border: 1px solid #e5e5e5;
 }
 
 /* Security Section Style */
 .bank-info {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 20px;
-    margin-bottom: 50px;
+    gap: 6rem;
+    margin-bottom: 6rem;
 }
 
 .bank-info p {
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 500;
     text-align: left;
+}
+
+.jp-morgan-bank {
+    margin-left: 7rem;
 }
 
 .jp-morgan-bank,
 .network,
 .license {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -436,11 +356,11 @@ hr {
     justify-content: center;
     align-items: center;
 
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     color: #89ec5a;
-    font-size: 30px;
-    margin-right: 20px;
+    font-size: 2rem;
+    margin-right: 1.5rem;
 
     border-radius: 50%;
     background-color: #163300;
@@ -451,11 +371,11 @@ hr {
     justify-content: space-evenly;
     align-items: center;
 
-    width: 80%;
+    width: 85%;
     height: 550px;
     margin: auto;
     text-align: left;
-    border-radius: 50px;
+    border-radius: 3rem;
     background-color: #A0E1E1;
 }
 
@@ -491,29 +411,34 @@ hr {
     background-color: #163300;
 }
 
-/* Business Section Style */
 .explore-business {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-
-    margin-top: 70px;
+    margin: 70px 0;
     text-align: left;
     background-color: #163300;
 }
 
+.explore-business .text-col {
+    padding: 4rem;
+}
+
+.explore-business .image-col {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 .explore-business .image-col img {
-    width: 700px;
-    height: 550px;
-    margin: 30px 100px 30px 0;
+    width: 500px;
+    height: 600px;
+    object-fit: cover;      /* Maintains aspect ratio */
+    border-radius: 10px;
 }
 
 .explore-business .text-col h2 {
     color: #9FE870;
-    font-size: 45px;
-    font-weight: 600;
-    line-height: 130%;
-    margin-bottom: 30px;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 1.5rem;
 }
 
 .explore-business .text-col p {
@@ -523,29 +448,24 @@ hr {
     line-height: 130%;
     letter-spacing: 0.3px;
     line-height: 150%;
-    margin: 30px 0 50px;
 }
 
-.explore-business .btn .wise-business {
-    width: 40%;
-    font-size: 15px;
+.explore-business .btn button {
+    font-size: 1rem;
     font-weight: 600;
     color: #163300;
     background-color: #9ff578;
-    padding: 13px 23px;
-    border-radius: 30px;
-    cursor: pointer;
+    padding: 15px 20px;
 }
 
-.explore-business .btn .wise-business:hover,
-.mission-text .btn .wise-mission:hover {
+.explore-business .btn .wise-business:hover {
     background-color: #c3f7aa;
 }
 
 /* Mission Section Style */
 .our-mission {
     width: 85%;
-    height: 95vh;
+    height: 720px;
     margin: auto;
     text-align: center;
     margin-top: 200px;
@@ -573,7 +493,7 @@ hr {
 
 .mission-text p {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 30px;
     text-align: center;
     letter-spacing: 0.5%;
@@ -593,7 +513,7 @@ hr {
 /* Main Section Style End Here */
 
 
-/* Footer Style Start Here */
+/* Footer Section Style Start Here */
 footer {
     background-color: #16330014;
     margin-top: 100px;
@@ -637,7 +557,7 @@ footer .links {
 
 .links p {
     color: #163300;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
@@ -656,7 +576,7 @@ footer .links {
 .social-media ul {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 
     list-style: none;
     cursor: pointer;
@@ -705,4 +625,249 @@ footer .links {
     font-size: 14px;
     text-align: center;
 }
-/* Footer Style End Here */
+/* Footer Section Style End Here */
+
+
+/* Media query for screen sizes 500px and below */
+
+@media screen and (max-width: 500px) {
+    /* Header Section Style For Mobile */
+    .header-left-links,
+    .header-right ul li:not(:last-child):not(:nth-last-child(2)) {  /* Hide all items in header-right except the last two (Login and Register) */
+        display: none;
+    }
+
+    .header-container {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    /* Main Section Style For Mobile */
+    .heading h1 {
+        font-size: 2.5rem;
+        padding: 0  0 1rem;
+    }
+
+    .heading .btn button,
+    .rate-calculator .btn button {
+        width: 80%;
+    }
+
+    .main-container .btn .primary-btn {
+        margin: 1rem 0;
+    }
+
+    .main-container .btn .secondary-btn {
+        display: none;
+    }
+
+    .main-container .main-image {
+        margin: 0.5rem auto;
+    }
+
+    .main-container .app-store img {
+        height: 2rem;
+        margin: 0  0.5rem;
+    }
+
+    /* Rate Calculator Section Style For Mobile */
+    .exchange-rate-container {
+        flex-direction: column;
+        margin: 1.5rem 0;
+    }
+
+    .rate-text {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .rate-text h2 {
+        font-size: 1.4rem;
+    }
+    
+    .exchange-rate-container .rate-calculator {
+        width: 95%;
+        margin: 1rem 0;
+    }
+
+    .rate-calculator p {
+        font-size: 11px;
+    }
+
+    /* Features Section Style For Mobile */
+    .features {
+        padding: 1rem;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    .text-col, .image-col {
+        flex-basis: 100%;               /* Full width on mobile */
+        margin-bottom: 1rem;
+    }
+    
+    .image-col img {
+        width: 100%;
+    }
+    
+    .features h2 {
+        font-size: 1.3rem;
+    }
+
+    .features .btn,
+    .explore-business .btn {
+        padding-left: 2rem;
+    }
+
+    .features .btn button,
+    .explore-business .btn button {
+        width: 90%;
+    }
+
+    .features .btn .explore-account {
+        display: none;
+    }
+
+    .row:first-child .text-col {        /* Adjust order for the first .row */
+        order: -1;                      /* Text comes second */
+    }
+
+    hr {
+        margin-top: 0.5rem;
+    }
+
+    /* Security Section Style For Mobile */
+    .bank-info {
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        padding: 1.5rem;
+    }
+
+    .jp-morgan-bank {
+        margin-left: 0;
+    }
+
+    .bank-info .fa-building-columns,
+    .network .fa-circle-check,
+    .license .fa-shield {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+
+    .lock-key {
+        flex-direction: column-reverse;
+        width: 93%;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .lock-key .lock-image img {
+        height: 250px;
+        width: auto;
+        margin-bottom: 2rem;
+    }
+
+    .lock-text h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .lock-text p {
+        font-size: 1.1rem;
+    }
+
+    .lock-key .btn button {
+        width: 100%;
+    }
+
+    /* Business Section Style For Mobile */
+    .explore-business {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 0;
+    }
+
+    .explore-business .text-col,
+    .explore-business .image-col {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    .explore-business .image-col img {
+        width: 100%;        /* Adjusts image width to fit screen */
+        height: 450px;      /* Maintains aspect ratio */
+    }
+
+    .explore-business .text-col h2 {
+        font-size: 2rem;
+    }
+
+    .explore-business .text-col p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    /* Our Mission Section Style For Mobile */
+    .our-mission {
+        width: 92%;
+        height: 500px; 
+        margin-top: 100px;
+        padding: 1rem;
+    }
+
+    .globe-image img {
+        top: -110px;
+        height: 210px;
+    }
+
+    .mission-text {
+        margin-top: -60px;
+    }
+
+    .mission-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .mission-text p {
+        font-size: 1rem;
+    }
+
+    /* Footer Section Style For Mobile */
+    footer {
+        padding: 30px 15px;
+    }
+
+    .conditions ol {
+        padding-left: 2rem;
+    }
+
+    footer .links {
+        margin-top: 50px;
+    }
+
+    footer .links, .imp-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .imp-links .logo img {
+        height: 25px;
+        margin-bottom: 1rem;
+    }
+    
+
+    .links p {
+        margin: 20px;
+    }
+
+    .links p, 
+    .links a, 
+    .copy-right p, 
+    .copy-right-text p {
+        font-size: 15px;
+    }
+}
