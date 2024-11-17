@@ -13,37 +13,30 @@
     <!--* Header Section Start Here -->
     <header>
         <div class="header-container">
-            <div class="left-side">
-                <div class="logo">
-                    <img src="./images/wise-logo.png" alt="wise-logo">
-                </div>
-                
-                <div class="menu">
-                    <div class="active">
-                        <p>Personal</p>
-                    </div>
-                    <div class="business">
-                        <p>Business</p>
-                    </div>
-                    <div class="platform">
-                        <p>Platform</p>
-                    </div>
+            <div class="header-left">
+                <a href="index.html">
+                    <img src="./images/wise-logo.png" alt="wise-logo" class="logo">
+                </a>
+                <div class="header-left-links">
+                    <ul>
+                        <li>Personal</li>
+                        <li>Business</li>
+                        <li>Platform</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="right-side">
+            <div class="header-right">
                 <ul>
                     <li>Features <i class="fa-solid fa-caret-down"></i></li>
                     <li>Pricing</li>
                     <li>Help</li>
-                    <li class="language">
-                        <img src="./images/us.svg" alt="us-flag">
-                        <p>EN</p>
+                    <li class="lang">
+                        <img src="./images/us.svg" alt="us-flag"> 
+                        <span>EN</span>
                     </li>
                     <li>Log in</li>
-                    <div class="register">
-                        <p>Register</p>
-                    </div>
+                    <li>Register</li>
                 </ul>
             </div>
         </div>
@@ -61,36 +54,35 @@
                 </p>
 
                 <div class="btn">
-                    <p class="send-money">Send money now</p>
-                    <div class="transfer">
-                        How our transfer work
-                        <div class="line"></div>
-                    </div>
+                    <button class="primary-btn">Send money now</button>
+                    <button class="secondary-btn">How our transfer work</button>
                 </div>
             </div>
 
+            <!--* Main Image Section -->
             <div class="main-image">
                 <img src="./images/main-image.jpg" alt="main-image">
             </div>
 
-            <div class="app-store-logo">
+            <!--* App Store Section -->
+            <div class="app-store">
                 <img src="./images/app-store.svg" alt="app-store-logo">
                 <img src="./images/google-play.svg" alt="google-play-logo">
             </div>
 
             <!--* Exchange Rate Section  -->
-            <div class="exchange-rate">
-                <div class="exchange-rate-text">
+            <div class="exchange-rate-container">
+                <div class="rate-text">
                     <h2>High speed, low fee transfers</h2>
                     <p>
-                        Use our calculator to check prices for transfers in any of 40+ <br> currencies. Whether scheduling payments or putting down deposits <br> — over half our transfers get there in under 20 seconds. Use it to <br> believe it.
+                        Use our calculator to check prices for transfers in any of 40+ currencies. Whether scheduling payments or putting down deposits — over half our transfers get there in under 20 seconds. Use it to believe it.
                     </p>
-                    <div class="how-to-send-money">
-                        <p>Learn how to send money</p>
+                    <div class="btn">
+                        <button class="secondary-btn send-money">Learn how to send money</button>
                     </div>
                 </div>
 
-                <div class="exchange-rate-calculator">
+                <div class="rate-calculator">
                     <div class="sender">
                         <p>You send exactly</p>
                         <div class="sender-money">
@@ -143,8 +135,8 @@
                     </div>
 
                     <div class="btn">
-                        <button class="compare">Compare fees</button>
-                        <button class="send-money">Send money now</button>
+                        <button class="primary-btn send-money">Send money now</button>
+                        <button class="secondary-btn compare">Compare fees</button>
                     </div>
                 </div>
             </div>
@@ -157,15 +149,12 @@
                     </div>
 
                     <div class="text-col">
-                        <h2>Manage money across borders <br> with one simple account</h2>
-                        <p>Send money to family from the US fast, and keep <br> money in other currencies in your account. Convert to <br> 40+ currencies in just a tap.</p>
+                        <h2>Manage money across borders with one simple account</h2>
+                        <p>Send money to family from the US fast, and keep money in other currencies in your account. Convert to 40+ currencies in just a tap.</p>
 
                         <div class="btn">
-                            <p class="open-account">Open an account</p>
-                            <div class="explore">
-                                Explore the wise account
-                                <div class="line"></div>
-                            </div>
+                            <button class="primary-btn open-account">Open an account</button>
+                            <button class="explore-account">Explore the wise account</button>
                         </div>
                     </div>
                 </div>
@@ -173,10 +162,10 @@
                 <div class="row">
                     <div class="text-col">
                         <h2>4.18% APY on your USD balance</h2>
-                        <p>4.18% APY (Annual Percentage Yield) on your USD <br> Balance when you opt in to our interest feature. Enjoy <br> the same instant access to your money, plus <br> passthrough FDIC insurance up to $250,000 on all <br> Eligible Balances combined through our Program <br> Bank.</p>
+                        <p>4.18% APY (Annual Percentage Yield) on your USD Balance when you opt in to our interest feature. Enjoy the same instant access to your money, plus passthrough FDIC insurance up to $250,000 on all Eligible Balances combined through our Program Bank.</p>
 
                         <div class="btn">
-                            <p class="explore-feature">Explore our interest feature</p>
+                            <button class="primary-btn explore-feature">Explore our interest feature</button>
                         </div>
                     </div>
 
@@ -194,14 +183,14 @@
                         <div class="bank-icon">
                             <i class="fa-solid fa-building-columns"></i>
                         </div>
-                        <p>All funds are deposited with banks like <br> JPMorgan Chase Bank</p>
+                        <p>All funds are deposited with <br> banks lik JPMorgan Chase <br> Bank</p>
                     </div>
 
                     <div class="network">
                         <div class="register-icon">
                             <i class="fa-solid fa-circle-check"></i>
                         </div>
-                        <p>Registered with the Financial Crimes <br> Enforcement Network (FinCEN)</p>
+                        <p>Registered with the Financial <br> Crimes  Enforcement Network <br> (FinCEN)</p>
                     </div>
 
                     <div class="license">
@@ -222,7 +211,7 @@
                             Plus our customer service is here to help. We've got <br> dedicated fraud and security teams if you ever need <br> them.
                         </p>
                         <div class="btn">
-                            <p class="learn-more">Learn more</p>
+                            <button class="learn-more">Learn more</button>
                         </div>
                     </div>
 
@@ -240,13 +229,13 @@
                     </div>
 
                     <div class="text-col">
-                        <h2>Ready for businesses <br> of all sizes</h2>
+                        <h2>Ready for businesses of all sizes</h2>
                         <p>
-                            Pay invoices and employees worldwide, and keep your cash flow in <br> check. Join over 400,000 freelancers, micro businesses and SMBs <br> using Wise.
+                            Pay invoices and employees worldwide, and keep your cash flow in check. Join over 400,000 freelancers, micro businesses and SMBs using Wise.
                         </p>
 
                         <div class="btn">
-                            <p class="wise-business">Explore Wise Business</p>
+                            <button class="wise-business">Explore Wise Business</button>
                         </div>
                     </div>
                 </div>
@@ -260,10 +249,10 @@
                 <div class="mission-text">
                     <h2>Meet money <br> without borders</h2>
                     <p>
-                        We're building the best way to move and manage the world's money. Min fees. <br> Max ease. Full speed.
+                        We're building the best way to move and manage the world's money. <br> Min fees. Max ease. Full speed.
                     </p>
                     <div class="btn">
-                        <p class="wise-mission">Learn about our mission</p>
+                        <button class="wise-mission">Learn about our mission</button>
                     </div>
                 </div>
             </div>
@@ -271,8 +260,9 @@
     </main>
     <!--* Main Section End Here -->
 
-    <!--* Footer Section Start Here -->
+    <!--* Footer Section Start Here  -->
     <footer>
+        <!--* Term and Conditions Section -->
         <div class="conditions">
             <ol>
                 <li>
@@ -288,7 +278,9 @@
             </ol>
         </div>
 
+        <!--* Links Section -->
         <div class="links">
+            <!--* Company Info Section -->
             <div class="company">
                 <p>Company and team</p>
                 <a href="#">Company and team</a>
@@ -301,6 +293,8 @@
                 <a href="#">Help centre</a>
                 <a href="#">Accessibility</a>
             </div>
+
+            <!--* Company Products Section -->
             <div class="products">
                 <p>Wise Products</p>
                 <a href="#">International money transfers</a>
@@ -311,6 +305,8 @@
                 <a href="#">Wise Business</a>
                 <a href="#">Mass payments</a>
             </div>
+
+            <!--* Company Resources Section -->
             <div class="resources">
                 <p>Resources</p>
                 <a href="#">News and blog</a>
@@ -324,6 +320,8 @@
                 <a href="#">Invoice generator</a>
                 <a href="#">Business Calculators</a>
             </div>
+
+            <!--* Social Media Section -->
             <div class="social-media">
                 <p>Follow us</p>
                 <ul>
@@ -335,34 +333,39 @@
         </div>
         <hr>
 
+        <!--* Important Links Section -->
         <div class="imp-links">
             <div class="logo">
                 <img src="./images/wise-second-logo.png" alt="wise-logo">
             </div>
+
             <div class="legal">
                 <p>Legal</p>
                 <p>Complaints</p>
             </div>
+
             <div class="policy">
                 <p>Privacy Policy</p>
                 <p>Country site map</p>
             </div>
+
             <div class="cookie">
                 <p>Cookie policy</p>
                 <p>Modern slavery statement</p>
             </div>
         </div>
 
+        <!--* Copy Right Section -->
         <div class="copy-right">
             <p>© Wise US Inc 2024</p>
         </div>
 
+        <!--* Copy Right Text Section -->
         <div class="copy-right-text">
             <p>
-                Wise is a Money Service Business registered with FinCen. It is authorized to operate in <span>most states</span>. In other <br> states, the program is sponsored by Community Federal Savings Bank, to which we're a service provider.
+                Wise is a Money Service Business registered with FinCen. It is authorized to operate in <span>most states</span>. In other states, the program <br> is sponsored by Community Federal Savings Bank, to which we're a service provider.
             </p>
         </div>
-
     </footer>
     <!--* Footer Section End Here -->
 </body>
